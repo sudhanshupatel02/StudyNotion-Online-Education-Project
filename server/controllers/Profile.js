@@ -18,7 +18,7 @@ exports.updateProfile = async (req, res) => {
       contactNumber = "",
       gender = "",
     } = req.body
-    //get userId
+    //get user id
     const id = req.user.id
 
     // Find the profile by id
@@ -117,3 +117,4 @@ exports.getAllUserDetails = async (req, res) => {
     })
   }
 }
+
