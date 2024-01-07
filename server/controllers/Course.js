@@ -290,9 +290,12 @@ exports.getAllCourses = async (req, res) => {
 // }
 
 
+//getCourseDetails
 exports.getCourseDetails = async (req, res) => {
   try {
+    //get id
     const { courseId } = req.body
+    //find courseDetails
     const courseDetails = await Course.findOne({
       _id: courseId,
     })
@@ -313,6 +316,7 @@ exports.getCourseDetails = async (req, res) => {
       })
       .exec()
 
+      //validation
     if (!courseDetails) {
       return res.status(400).json({
         success: false,
@@ -337,6 +341,7 @@ exports.getCourseDetails = async (req, res) => {
 
     const totalDuration = convertSecondsToDuration(totalDurationInSeconds)
 
+    //return response
     return res.status(200).json({
       success: true,
       data: {
