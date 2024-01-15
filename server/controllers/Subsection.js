@@ -7,10 +7,13 @@ const { uploadImageToCloudinary } = require("../utils/imageUploader")
 exports.createSubSection = async (req, res) => {
   try {
     // Extract necessary information from the request body
+    // console.log("sudhanshu patel", req.body)
     const { sectionId, title, description } = req.body
     const video = req.files.video
-
+    console.log(video)
+    
     // Check if all necessary fields are provided
+    console.log("sudhanshu patel", sectionId, title, description)
     if (!sectionId || !title || !description || !video) {
       return res
         .status(404)
