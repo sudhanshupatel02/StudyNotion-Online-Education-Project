@@ -11,6 +11,7 @@ export default function MyProfile() {
 
   return (
     <>
+     {/* section 3 */}
       <h1 className="mb-14 text-3xl font-medium text-richblack-5">
         My Profile
       </h1>
@@ -37,6 +38,8 @@ export default function MyProfile() {
           <RiEditBoxLine />
         </IconBtn>
       </div>
+
+       {/* section 3 */}
       <div className="my-10 flex flex-col gap-y-10 rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-8 px-12">
         <div className="flex w-full items-center justify-between">
           <p className="text-lg font-semibold text-richblack-5">About</p>
@@ -59,6 +62,8 @@ export default function MyProfile() {
           {user?.additionalDetails?.about ?? "Write Something About Yourself"}
         </p>
       </div>
+
+     {/* section 3 */}
       <div className="my-10 flex flex-col gap-y-10 rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-8 px-12">
         <div className="flex w-full items-center justify-between">
           <p className="text-lg font-semibold text-richblack-5">
