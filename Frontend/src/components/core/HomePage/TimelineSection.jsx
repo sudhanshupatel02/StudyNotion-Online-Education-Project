@@ -34,7 +34,7 @@ const TimelineSection = () => {
     <div>
       <div className="flex flex-col lg:flex-row gap-20 mb-20 items-center">
         <div className="lg:w-[45%] flex flex-col gap-14 lg:gap-3">
-          {TimeLine.map((ele, i) => {   //!ele = element, i = index
+          {TimeLine.map((ele, i) => {
             return (
               <div className="flex flex-col lg:gap-3" key={i}>
                 <div className="flex gap-6" key={i}>
@@ -59,18 +59,18 @@ const TimelineSection = () => {
           <div className="absolute lg:left-[50%] lg:bottom-0 lg:translate-x-[-50%] lg:translate-y-[50%] bg-caribbeangreen-700 flex lg:flex-row flex-col text-white uppercase py-5 gap-4 lg:gap-0 lg:py-10 ">
             {/* Section 1 */}
             <div className="flex gap-5 items-center lg:border-r border-caribbeangreen-300 px-7 lg:px-14">
-              <p className="text-3xl font-bold w-[75px]">10</p>
-              <p className="text-caribbeangreen-300 text-sm w-[75px]">
+              <h1 className="text-3xl font-bold w-[75px]">10</h1>
+              <h1 className="text-caribbeangreen-300 text-sm w-[75px]">
                 Years experiences
-              </p>
+              </h1>
             </div>
 
             {/* Section 2 */}
             <div className="flex gap-5 items-center lg:px-14 px-7">
-              <p className="text-3xl font-bold w-[75px]">250</p>
-              <p className="text-caribbeangreen-300 text-sm w-[75px]">
+              <h1 className="text-3xl font-bold w-[75px]">250</h1>
+              <h1 className="text-caribbeangreen-300 text-sm w-[75px]">
                 types of courses
-              </p>
+              </h1>
             </div>
             <div></div>
           </div>

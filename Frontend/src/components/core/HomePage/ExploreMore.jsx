@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HomePageExplore } from "../../../data/homepage-explore";//! yah data me h
+import { HomePageExplore } from "../../../data/homepage-explore";
 import CourseCard from "./CourseCard";
 import HighlightText from "./HighlightText";
 
@@ -20,7 +20,7 @@ const ExploreMore = () => {
 
   const setMyCards = (value) => {
     setCurrentTab(value);
-    const result = HomePageExplore.filter((course) => course.tag === value); //!yah filter krna hai tag kag ke basis per jo data me h
+    const result = HomePageExplore.filter((course) => course.tag === value);
     setCourses(result[0].courses);
     setCurrentCard(result[0].courses[0].heading);
   };

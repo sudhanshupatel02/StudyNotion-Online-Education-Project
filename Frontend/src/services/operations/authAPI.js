@@ -159,9 +159,9 @@ export function resetPassword(password, confirmPassword, token) {
   return async(dispatch) => {
     dispatch(setLoading(true));
     try{
-      const response = await apiConnector("POST", RESETPASSWORD_API, {password, confirmPassword, token}); //!Backend api call kare ke liye apiConnector
+      const response = await apiConnector("POST", RESETPASSWORD_API, {password, confirmPassword, token});
 
-      console.log("RESET Password TOKEN RESPONSE ... ", response);
+      console.log("RESET Password RESPONSE ... ", response);
 
 
       if(!response.data.success) {
