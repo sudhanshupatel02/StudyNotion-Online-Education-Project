@@ -99,7 +99,7 @@ function Navbar() {
                   <Link to={link?.path}>
                     <p
                       className={`${
-                        matchRoute(link?.path)  
+                        matchRoute(link?.path)
                           ? "text-yellow-25"
                           : "text-richblack-25"
                       }`}
